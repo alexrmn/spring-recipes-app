@@ -7,5 +7,10 @@
 <body>
 <h1>My Recipes!</h1>
 
+<ul th:each = "recipe : ${recipes}">
+    <li th:text = ${recipe.getDescription}>item</li>
+
+</ul>
+
 </body>
 </html>
